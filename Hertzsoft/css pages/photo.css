@@ -1,0 +1,29 @@
+.img-zoom {
+    overflow: hidden; 
+    transition: transform 0.5s; 
+  }
+  
+  .img-zoom:hover img {
+    transform: scale(1.5); 
+  }
+  .img-zoom:hover img {
+      transform: scale(1.5);
+      filter: blur(1.5px); 
+  }
+  .img-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: rgb(255, 252, 252);
+      font-size: 20px;
+      font-weight: 600;
+      text-shadow: 2px 2px black;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s;
+  }
+  
+  .img-zoom:hover .img-overlay {
+      opacity: 1;
+  }
